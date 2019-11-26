@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "thedonald.win Expander",
+  "description": "This plugin is used to expand content on thedonald.win",
+  "version": "1.0",
+  "background": {
+    "scripts": [ "popup2.js" ]
+  },
+  "content_scripts": [
+    {
+      "js": [ "jquery.js" ],
+      "matches": [ "https://thedonald.win/*" ]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon16.png"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "declarativeContent",
+    "storage"
+  ]
+}
